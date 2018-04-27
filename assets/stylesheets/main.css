@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*==== Altering the Box model setup ====*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*==== Media Query === */
+body:after {
+  font-size: 150%;
+  font-weight: bold;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: hsla(1,60%,40%,0.7);
+  content: "less than 320";
+}
+@media only screen and (min-width: 320px) {
+  body:after {
+    content: "320 to 480";
+    background-color: hsla(90,60%,40%,0.7);
+  }
+}
+@media only screen and (min-width: 480px) {
+  body:after {
+    content: "480 to 768";
+    background-color: hsla(180,60%,40%,0.7);
+  }
+}
+@media only screen and (min-width: 768px) {
+  body:after {
+    content: "768 to 1024";
+    background-color: hsla(270,60%,40%,0.7);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body:after {
+    content: "1024 and up";
+    background-color: hsla(360,60%,40%,0.7);
+  }
+}
+
+
+body {
+  font: normal 100% "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+/*==== sizing for the main eye grab esction === */
